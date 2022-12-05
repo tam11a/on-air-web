@@ -1,8 +1,5 @@
-
 const AppFooter = () => {
-  return (
-    <div>AppFooter</div>
-  )
-}
+	return <></>;
+};
 
-export default AppFooter
+export default AppFooter;

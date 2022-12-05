@@ -1,11 +1,12 @@
 import { Avatar, Box, Button, Stack, Typography } from "@mui/material";
 import { FiRadio } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	return (
 		<Stack
-			style={{
-				height: "85%",
+			sx={{
+				minHeight: "80vh",
 				alignItems: "center",
 				justifyContent: "space-evenly",
 			}}
@@ -28,6 +29,12 @@ const Home = () => {
 			>
 				<Typography
 					textAlign={"center"}
+					variant={"h5"}
+				>
+					On Air
+				</Typography>
+				<Typography
+					textAlign={"center"}
 					variant={"subtitle2"}
 				>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
@@ -39,6 +46,8 @@ const Home = () => {
 					variant={"contained"}
 					sx={{ borderRadius: "100px" }}
 					startIcon={<FiRadio />}
+					component={Link}
+					to={"/app"}
 				>
 					Open App
 				</Button>
