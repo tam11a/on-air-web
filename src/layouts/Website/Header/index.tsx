@@ -1,7 +1,5 @@
 const WebsiteHeader = () => {
-  return (
-    <div>WebsiteHeader</div>
-  )
-}
+	return <></>;
+};
 
-export default WebsiteHeader
+export default WebsiteHeader;
